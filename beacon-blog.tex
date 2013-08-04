@@ -1,0 +1,215 @@
+% We will feature weekly posts from BEACON researchers
+% (including faculty, post-docs, grad students, and undergrads)
+% describing their work. These posts should be around 800-1000 words,
+% and written in a non-technical way that would be easily understood
+% by an undergraduate non-major. Ideally, the posts should also include
+% a personal element, describing your experience or why you are interested
+% in your research topic. The goal is not only to communicate BEACON
+% research to the public, but also to connect faces and personalities to
+% that research. Please include one or two pictures, of something related
+% to your research or of you, with your submission, in file formats
+% suitable for uploading to the internet (jpg, tiff, bmp).
+
+\documentclass[12pt]{article}
+
+\title{Speciation in digital organisms}
+\author{Carlos Anderson}
+
+\begin{document}
+
+\maketitle
+
+% Double-spaced
+\baselineskip 24pt
+
+
+
+That the structure and laws of our universe
+enabled the origin of life is an incredible coincidence.
+%
+Without the gravity that aggregates matter into galaxies, stars, and planets,
+or without the light that radiates from the sun and heats the Earth,
+or without the chemical bonds between atoms that store and release energy,
+life, as we know it, would have probably never arisen.
+%
+But would life, as we \emph{don't} know it, have?
+
+
+
+I thought about this question in the summer of 2003,
+after reading a curious novel by Michael Crichton called \emph{Prey}.
+%
+In it, scientists create self-reproducing artificial nanobots,
+which evolve out of control and prey on their creators
+(most of them die, of course).
+%
+But the concept of an artificial life fascinated me,
+and I soon began reading on evolutionary computation,
+starting with a wonderful book by Melanie Mitchell.
+%
+She describes a class of algorithms
+that use the principles of evolution by natural selection%
+---inheritance, variation, and differential reproduction---%
+to search for solutions to various kinds of problems,
+such as the design of efficient engines
+or the sequence reconstruction of the human genome.
+%
+These `genetic algorithms' demonstrate that evolution
+is not unique to biological life
+but to any system having certain basic properties.
+
+
+
+With this new interest in evolution I began taking classes in biology,
+and although I had recently obtained a B.S. degree in Computer Science,
+I decided to pursue an M.S. degree in Biology.
+%
+%Back in 2004, I had asked one of my biology professors how
+%I can apply my computer skills to solving biological problems,
+%and she happened to have been looking
+%for someone like me to help her solve a problem.
+%
+%She studied polar behavior and needed a way to
+%identify individuals, but because tagging them was too invasive,
+%she wanted to identify them from photographs.
+%
+%She had the idea of using whisker spot patterns,
+%as had been done in lions,
+%but because comparing whisker spot patterns is tedious,
+%she wanted to automate the process.
+%
+%Such computer-aided identification system became my thesis.
+%
+%It wasn't exactly evolutionary,
+%nor revolutionary for that matter,
+%but the Masters allowed me to take
+%graduate classes in evolution
+%and develop a specific interest within evolution.
+This first exposure to graduate school
+helped me transition from by background
+in computer science to biology,
+and it allowed me to develop 
+a specific interest within evolution
+that I could study further as a dissertation.
+
+
+
+This interest was speciation, the process by which new species arise.
+%
+There are many definitions of `species,' some based on morphology,
+others on ecology, and still others on genetic differences.
+%
+But the one most widely accepted is the biological species concept,
+in which populations are considered to be different species
+if they are reproductively isolated;
+that is, if they cannot produce fertile or viable offspring,
+either because they are unable to mate
+or because their hybrid offspring are sterile or inviable.
+%
+Reproductive isolation is thought to evolve most readily
+when populations become geographically isolated and
+each subpopulation adapts independently to its local environment.
+%
+Two big questions in speciation are
+(1) can speciation proceed even if environments are similar to each other,
+and (2) can speciation proceed when migration between populations occurs?
+%
+I wanted to study speciation in an artificial life system,
+where my findings could be generalized to life as we don't know it.
+
+
+
+Searching for Ph.D. programs in 2006, I found Michigan State University,
+where a team of scientists and students have been developing Avida.
+%
+Avida is an artificial life software
+designed to study questions in evolution and ecology.
+%
+In Avida, digital organisms consist of a sequence of instructions (or `genome')
+that encodes their ability to replicate and perform computational functions.
+%
+The precise sequence of instructions that
+allow organisms to perform functions
+evolve through natural selection and genetic drift,
+two evolutionary processes that occur in biological organisms.
+%
+With Avida, one can observe millions of generations
+of evolution in a short period of time,
+perform many replications, easily manipulate genomes,
+and accurately record measurements like fitness and events like mutations.
+
+
+
+One of my studies addresses whether speciation
+can occur when environments are similar between populations.
+%
+One hypothesis is that speciation can happen by compensatory adaptation,
+in which a deleterious mutation rises in frequency in a population
+and is subsequently compensated by secondary mutations.
+%
+Imagine that two populations become divided
+and each undergoes the process of compensatory adaptation.
+%
+If the populations were now to come into contact,
+their hybrids would inherit a combination of
+deleterious and compensatory mutations,
+which, because they evolved independently,
+may not be compatible with each other
+and possibly cause inviability or sterility.
+%
+I found this hybrid incompatibility in Avida,
+and it wasn't simply because hybrids inherited
+deleterious mutations, but also because
+compensatory mutations between populations were incompatible.
+%
+These findings show that compensatory adaptation is
+one way in which speciation can occur when
+the external environment does not change.
+
+
+
+Another of my studies tests the effect of
+migration between diverging populations on the probability of speciation.
+%
+I evolved populations that had to
+adapt to a new environment while
+migration between them occurred.
+%
+Although the environments were new,
+I had treatments in which the two environments
+were different from each other
+and in which they were the same.
+%
+I found that when the environments are different,
+migration does not prevent speciation from starting%
+---even at 10\% migration.
+%
+However, when the environments are the same,
+even 1\% migration prevents speciation.
+%
+It appears that when the environments are the same,
+the population that adapts to it first
+and lets an individual migrate to the other population,
+effectively gives away its solution.
+%
+This causes both populations to adapt similarly,
+preventing reproductive isolation between them.
+
+
+
+Interestingly, these findings agree with theoretical expectations.
+%
+Such unsurprising results are actually good
+because they show that Avida behaves like biology,
+and therefore demonstrates that
+evolution does not require the intricacies of biological life.
+%
+Although Avida was not designed to study the \emph{origin} of life,
+it does make one ponder whether artificial life could evolve \emph{de novo},
+and thus show that life can emerge
+not from specific universal structures or laws
+but from general ones.
+
+
+
+\end{document}
